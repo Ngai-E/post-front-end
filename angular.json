@@ -30,6 +30,7 @@
               "src/assets/bootstrap/css/bootstrap.min.css",
               "src/assets/fonts/simple-line-icons.min.css",
               "src/assets/css/vanilla-zoom.min.css",
+              "src/assets/fonts/ionicons.min.css",
               "src/styles.css"
             ],
             "scripts": [
