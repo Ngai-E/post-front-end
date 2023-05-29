@@ -31,12 +31,16 @@
               "src/assets/fonts/simple-line-icons.min.css",
               "src/assets/css/vanilla-zoom.min.css",
               "src/assets/fonts/ionicons.min.css",
+              "src/assets/fonts/fontawesome-all.min.css",
               "src/styles.css"
             ],
             "scripts": [
               "src/assets/bootstrap/js/bootstrap.min.js",
               "src/assets/js/vanilla-zoom.js",
-              "src/assets/js/theme.js"
+              "src/assets/js/theme.js",
+              "src/assets/js/theme-dashboard.js",
+              "src/assets/js/bs-init.js",
+              "src/assets/js/chart.min.js"
             ]
           },
           "configurations": {
