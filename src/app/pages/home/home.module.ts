@@ -4,6 +4,7 @@ import { FeatureComponent } from './components/feature/feature.component';
 import { AboutComponent } from './components/about/about.component';
 import { InfoComponent } from './components/info/info.component';
 import { SliderComponent } from './components/slider/slider.component';
+import { AboutInfoComponent } from './components/about/about-info/about-info.component';
 
 
 
@@ -12,7 +13,8 @@ import { SliderComponent } from './components/slider/slider.component';
         FeatureComponent,
         AboutComponent,
         InfoComponent,
-        SliderComponent
+        SliderComponent,
+        AboutInfoComponent
     ],
   exports: [
     InfoComponent,
