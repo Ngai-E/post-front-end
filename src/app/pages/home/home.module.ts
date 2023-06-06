@@ -5,6 +5,8 @@ import { AboutComponent } from './components/about/about.component';
 import { InfoComponent } from './components/info/info.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { AboutInfoComponent } from './components/about/about-info/about-info.component';
+import { RouterModule } from '@angular/router';
+import { SignupComponent } from '../signup/signup.component';
 
 
 
@@ -20,10 +22,13 @@ import { AboutInfoComponent } from './components/about/about-info/about-info.com
     InfoComponent,
     FeatureComponent,
     SliderComponent,
-    AboutComponent
+    AboutComponent,
   ],
     imports: [
-        CommonModule
+        CommonModule,
+        RouterModule.forRoot([
+          {path:'signup', component: SignupComponent},
+        ]),
     ]
 })
 export class HomeModule { }
