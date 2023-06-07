@@ -5,7 +5,7 @@
         <h5>Get started</h5>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="#">Sign up</a></li>
+          <li><a routerLink="/signup">Sign up</a></li>
           <li><a href="#">Downloads</a></li>
         </ul>
       </div>
@@ -28,9 +28,9 @@
       <div class="col-sm-3">
         <h5>Legal</h5>
         <ul>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Terms of Use</a></li>
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+          <li><a routerLink="/terms-of-service">Terms of Service</a></li>
+          <!-- <li><a routerLink="/terms-of-use">Terms of Use</a></li> -->
+          <li><a routerLink="/privacy-policy" [title]="policy"> Policy</a></li>
         </ul>
       </div>
     </div>

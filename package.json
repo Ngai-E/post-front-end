@@ -3,20 +3,16 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "start" : "node server.js",
-    "heroku-postbuild": "ng build --prod"
+    "test": "ng test"
   },
-  "engines": { "node": "8.19.2", "npm": "18.12.1" },
   "private": true,
   "dependencies": {
     "@angular/animations": "^16.0.0",
-    "@angular/cli": "~16.0.3",
     "@angular/common": "^16.0.0",
     "@angular/compiler": "^16.0.0",
-    "@angular/compiler-cli": "^16.0.0",
     "@angular/core": "^16.0.0",
     "@angular/forms": "^16.0.0",
     "@angular/platform-browser": "^16.0.0",
@@ -25,11 +21,8 @@
     "@ng-bootstrap/ng-bootstrap": "^15.0.0",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.5",
-    "express": "^4.18.2",
-    "path": "^0.12.7",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "typescript": "~5.0.2",
     "zone.js": "~0.13.0"
   },
   "devDependencies": {

@@ -41,30 +41,33 @@ export class HomeComponent {
     this.people = [
       {
         "id": 1,
-        "name": "John Smith",
-        "imageUrl": "avatar1.jpg",
-        "role": "Developer",
-        "facebookHandle": "@johnsmith",
-        "twitterHandle": "@johnsmith",
-        "instagramHandle": "@johnsmith"
+        "name": "Ngai Elizabeth",
+        "imageUrl": "ngai.png",
+        "role": "Social media Specialist",
+        "facebookHandle": "https://www.facebook.com/NgaiEli",
+        "twitterHandle": "https://twitter.com/Ngai_Elizabeth",
+        "instagramHandle": "https://www.instagram.com/ngaieli/",
+        "tiktokHandler": "https://www.tiktok.com/@ngaielizabeth?lang=en"
       },
       {
         "id": 2,
-        "name": "Emily Johnson",
-        "imageUrl": "avatar2.jpg",
-        "role": "Designer",
-        "facebookHandle": "@emilyjohnson",
-        "twitterHandle": "@emilyjohnson",
-        "instagramHandle": "@emilyjohnson"
+        "name": "Ndorrh Oswald",
+        "imageUrl": "ndorrh.jpg",
+        "role": "Developer",
+        "facebookHandle": "https://www.facebook.com/ndorrh",
+        "twitterHandle": "https://twitter.com/NdorrhEbu",
+        "instagramHandle": "https://www.instagram.com/oswald_officiale/",
+        "tiktokHandler": "https://www.tiktok.com/@vrkamer?lang=en"
       },
       {
         "id": 3,
-        "name": "Michael Davis",
-        "imageUrl": "avatar3.jpg",
+        "name": "Apondo Ernest",
+        "imageUrl": "Apondo.jpg",
         "role": "Manager",
         "facebookHandle": "@michaeldavis",
-        "twitterHandle": "@michaeldavis",
-        "instagramHandle": "@michaeldavis"
+        "twitterHandle": "https://twitter.com/ApondoErnest",
+        "instagramHandle": "@michaeldavis",
+        "tiktokHandler": ""
       }
     ];
   }
