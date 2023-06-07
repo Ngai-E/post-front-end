@@ -12,5 +12,11 @@ export interface IPeople {
   role: string,
   facebookHandle: string,
   twitterHandle: string,
-  instagramHandle: string
+  instagramHandle: string,
+  tiktokHandler:  string
+}
+
+export interface IAbout {
+  title:string,
+  description:string
 }
