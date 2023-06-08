@@ -29,6 +29,7 @@ import { SignupComponent } from '../signup/signup.component';
         RouterModule.forRoot([
           {path:'signup', component: SignupComponent},
         ]),
+       
     ]
 })
 export class HomeModule { }
