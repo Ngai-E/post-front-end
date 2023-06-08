@@ -5,3 +5,16 @@ main {
 .height {
     height: 70vh;
 } 
+
+.alert-danger {
+    border: unset;
+    background-color: unset;
+    font-size: 0.8rem;
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+
+input:focus {
+    box-shadow: unset;
+}
