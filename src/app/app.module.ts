@@ -15,6 +15,8 @@ import { HomeModule } from './pages/home/home.module';
 import { RouterModule } from '@angular/router';
 import { NoPermissionComponent } from './pages/no-permission/no-permission.component';
 import { AuthServiceService } from './services/auth-service.service';
+import { FormBuilder, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { SignupComponent } from './pages/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { AuthServiceService } from './services/auth-service.service';
     HomeComponent,
     PricingComponent,
     LoginComponent,
+    SignupComponent,
     NoPermissionComponent
   ],
   imports: [
@@ -32,7 +35,9 @@ import { AuthServiceService } from './services/auth-service.service';
     ComponentsModule,
     RouterModule,
     HomeModule,
-    NgbModule
+    NgbModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [AuthServiceService, Title],
   bootstrap: [AppComponent]
