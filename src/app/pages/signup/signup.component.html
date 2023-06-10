@@ -36,18 +36,29 @@
     >
       <h2 class="text-primary">REGISTRATION FORM</h2>
       <div class="col-md-6">
-        <label for="fname" class="form-label">First name <span class="text-danger fs-5">*</span></label>
+        <label for="fname" class="form-label"
+          >First name <span class="text-danger fs-5">*</span></label
+        >
         <input
           type="text"
           class="form-control"
           id="fname"
           formControlName="fName"
-          [ngClass]="fName?.invalid && (fName?.dirty || fName?.touched) ? 'border border-danger':'form-control'"
-          [ngClass]="fName?.valid && (fName?.dirty || fName?.touched) ? 'border border-success':'form-control'"
-          
+          [ngClass]="
+            fName?.invalid && (fName?.dirty || fName?.touched)
+              ? 'border border-danger'
+              : 'form-control'
+          "
+          [ngClass]="
+            fName?.valid && (fName?.dirty || fName?.touched)
+              ? 'border border-success'
+              : 'form-control'
+          "
         />
         <div
-          *ngIf="(fName?.invalid && (fName?.dirty || fName?.touched)) || submitted"
+          *ngIf="
+            (fName?.invalid && (fName?.dirty || fName?.touched)) || submitted
+          "
           class="alert alert-danger"
         >
           <div *ngIf="fName?.errors?.['required']">First Name is required.</div>
@@ -55,17 +66,29 @@
         <!-- <div class="valid-feedback">Looks good!</div> -->
       </div>
       <div class="col-md-6">
-        <label for="lName" class="form-label">Last name<span class="text-danger fs-5">*</span></label>
+        <label for="lName" class="form-label"
+          >Last name<span class="text-danger fs-5">*</span></label
+        >
         <input
           type="text"
           class="form-control"
           id="lName"
           formControlName="lName"
-          [ngClass]="lName?.invalid && (lName?.dirty || lName?.touched )? 'border border-danger':'form-control'"
-          [ngClass]="lName?.valid && (lName?.dirty || lName?.touched) ? 'border border-success':'form-control'"
+          [ngClass]="
+            lName?.invalid && (lName?.dirty || lName?.touched)
+              ? 'border border-danger'
+              : 'form-control'
+          "
+          [ngClass]="
+            lName?.valid && (lName?.dirty || lName?.touched)
+              ? 'border border-success'
+              : 'form-control'
+          "
         />
         <div
-          *ngIf="(lName?.invalid && (lName?.dirty || lName?.touched)) || submitted"
+          *ngIf="
+            (lName?.invalid && (lName?.dirty || lName?.touched)) || submitted
+          "
           class="alert alert-danger"
         >
           <div *ngIf="lName?.errors?.['required']">Last Name is required.</div>
@@ -74,57 +97,107 @@
       </div>
 
       <div class="col-md-12">
-        <label for="email" class="form-label">Email<span class="text-danger fs-5">*</span></label>
+        <label for="email" class="form-label"
+          >Email<span class="text-danger fs-5">*</span></label
+        >
         <input
           type="email"
           class="form-control"
           id="email"
           formControlName="email"
-          [ngClass]="email?.invalid && (email?.dirty || email?.touched)? 'border border-danger':'form-control'"
-          [ngClass]="email?.valid && (email?.dirty || email?.touched) ? 'border border-success':'form-control'"
+          [ngClass]="
+            email?.invalid && (email?.dirty || email?.touched)
+              ? 'border border-danger'
+              : 'form-control'
+          "
+          [ngClass]="
+            email?.valid && (email?.dirty || email?.touched)
+              ? 'border border-success'
+              : 'form-control'
+          "
         />
         <div
-          *ngIf="(email?.invalid && (email?.dirty || email?.touched)) || submitted"
+          *ngIf="
+            (email?.invalid && (email?.dirty || email?.touched)) || submitted
+          "
           class="alert alert-danger"
         >
-          <div *ngIf="email?.errors?.['required'] || email?.errors?.['email']">Please provide a valid Email.</div>
+          <div *ngIf="email?.errors?.['required'] || email?.errors?.['email']">
+            Please provide a valid Email.
+          </div>
         </div>
         <!-- <div class="invalid-feedback">Please provide a valid Email.</div> -->
       </div>
       <div class="col-md-6">
-        <label for="password" class="form-label">Password<span class="text-danger fs-5">*</span></label>
+        <label for="password" class="form-label"
+          >Password<span class="text-danger fs-5">*</span></label
+        >
         <input
           type="password"
           class="form-control"
           id="password"
           formControlName="password"
-          [ngClass]="password?.invalid && (password?.dirty || password?.touched )? 'border border-danger':'form-control'"
-          [ngClass]="password?.valid && (password?.dirty || password?.touched) ? 'border border-success':'form-control'"
+          [ngClass]="
+            password?.invalid && (password?.dirty || password?.touched)
+              ? 'border border-danger'
+              : 'form-control'
+          "
+          [ngClass]="
+            password?.valid && (password?.dirty || password?.touched)
+              ? 'border border-success'
+              : 'form-control'
+          "
         />
         <div
-          *ngIf="(password?.invalid && (password?.dirty || password?.touched)) || submitted"
+          *ngIf="
+            (password?.invalid && (password?.dirty || password?.touched)) ||
+            submitted
+          "
           class="alert alert-danger"
         >
-          <div *ngIf="password?.errors?.['required'] || password?.errors?.['minlength']">Please select a strong password.</div>
+          <div
+            *ngIf="password?.errors?.['required'] || password?.errors?.['minlength']"
+          >
+            Please select a strong password.
+          </div>
         </div>
-
       </div>
-       
+
       <div class="col-md-6">
-        <label for="confirmPassword" class="form-label">Confirm Password<span class="text-danger fs-5">*</span></label>
+        <label for="confirmPassword" class="form-label"
+          >Confirm Password<span class="text-danger fs-5">*</span></label
+        >
         <input
           type="password"
           class="form-control"
           id="confirmPassword"
           formControlName="confirmPassword"
-          [ngClass]="confirmPassword?.invalid && (confirmPassword?.dirty || confirmPassword?.touched )? 'border border-danger':'form-control'"
-          [ngClass]="confirmPassword?.valid && (confirmPassword?.dirty || confirmPassword?.touched) ? 'border border-success':'form-control'"
+          [ngClass]="
+            confirmPassword?.invalid &&
+            (confirmPassword?.dirty || confirmPassword?.touched)
+              ? 'border border-danger'
+              : 'form-control'
+          "
+          [ngClass]="
+            confirmPassword?.valid &&
+            (confirmPassword?.dirty || confirmPassword?.touched)
+              ? 'border border-success'
+              : 'form-control'
+          "
         />
         <div
-          *ngIf="(confirmPassword?.invalid && (confirmPassword?.dirty || confirmPassword?.touched)) || submitted"
+          *ngIf="
+            (confirmPassword?.invalid &&
+              (confirmPassword?.dirty || confirmPassword?.touched)) ||
+            submitted
+          "
           class="alert alert-danger"
         >
-          <div *ngIf="confirmPassword?.errors?.['required'] || confirmPassword?.invalid">Password doesn't match.</div>
+          <div
+            *ngIf="confirmPassword?.errors?.['required'] || confirmPassword?.invalid"
+          >
+            Password doesn't match.
+          </div>
         </div>
       </div>
       <div class="col-12 my-2">
@@ -139,18 +212,21 @@
           <label class="form-check-label" for="termsAndConditions">
             Agree to the <a routerLink="/terms-of-service">Terms of Service</a>
           </label>
-          <div
-          *ngIf="submitted && terms?.invalid"
-          class="alert alert-danger"
-        >
-        <div *ngIf="terms?.errors">You must accept terms and service </div>
-        </div>
-         
+          <div *ngIf="submitted && terms?.invalid" class="alert alert-danger">
+            <div *ngIf="terms?.errors">You must accept terms and service</div>
+          </div>
         </div>
       </div>
       <div class="col-12 my-2">
         <button class="btn btn-primary fw-bolder" type="submit">
-          Register
+          <span *ngIf="!loading">Register</span>
+          <span *ngIf="loading">Registering </span>
+          <span
+            class="spinner-border spinner-border-sm"
+            role="status"
+            aria-hidden="true"
+            *ngIf="loading"
+          ></span>
         </button>
         <span class="mx-3 d-lg-none"> OR</span>
         <a
