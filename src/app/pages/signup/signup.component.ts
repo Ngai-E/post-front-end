@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./signup.component.css']
 })
 export class SignupComponent implements OnInit {
+  loading:boolean = false;
   submitted: boolean = false;
   registrationForm = this.formBuilder.group({
     fName: ['',[Validators.required,]],
@@ -32,8 +33,12 @@ export class SignupComponent implements OnInit {
   onSubmit(): void {  
     this.submitted = true; 
     if (this.registrationForm.valid) {
-      console.warn('Your order has been submitted', this.registrationForm.value);
+      this.loading = true;
+      delete this.registrationForm.value.confirmPassword
+      const formData = this.registrationForm.value
+      console.warn('Your order has been submitted', formData);
       this.submitted = false; 
+
       this.registrationForm.reset();
       this.router.navigate(['/login']);
 
