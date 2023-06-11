@@ -11,6 +11,7 @@ import { PolicyComponent } from './pages/policy/policy.component';
 import { TermsOfServiceComponent } from './pages/terms-of-service/terms-of-service.component';
 import { TermsOfUseComponent } from './pages/terms-of-use/terms-of-use.component';
 import { SignupComponent } from './pages/signup/signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -28,7 +29,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [ RouterModule.forRoot(routes) ],
+  imports: [ RouterModule.forRoot(routes), ReactiveFormsModule ],
   exports: [ RouterModule ]
 })
 export class AppRoutingModule {
