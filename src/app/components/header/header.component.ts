@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-
+  pageTitle!: string;
+  constructor() {}
+  ngOnInit() {
+    this.pageTitle = window.location.pathname.split('/')[1]
+  }
 }
