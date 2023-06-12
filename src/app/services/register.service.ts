@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpResponse } from '@angular/common/http';
 import { Observable, throwError } from 'rxjs';
 import { catchError, map, retry } from 'rxjs/operators';
+import { Registration, RegistrationConfirmation } from '../pages/signup/model/Isignup';
 
 @Injectable({
   providedIn: 'root'
