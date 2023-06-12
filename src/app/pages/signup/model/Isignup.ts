@@ -1,4 +1,4 @@
-interface Registration {
+export interface Registration {
     fName: string,
     lName: string,
     email: string,
@@ -7,6 +7,6 @@ interface Registration {
     termsAndConditions: boolean,
 }
 
-interface RegistrationConfirmation {
+export interface RegistrationConfirmation {
     success: string
 }
